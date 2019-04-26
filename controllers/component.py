@@ -1,9 +1,10 @@
-from helpers.filehelper import getFileFromRelativePath
+import re
 import json
 import os
 from helpers.gethelper import getRequest
 from helpers.patchhelper import patchRequest
 from helpers.posthelper import postRequest
+from helpers.filehelper import getFileFromRelativePath
 from enums.status import status as statusEnum
 
 
@@ -75,3 +76,21 @@ def getComponentsByDependencies(dependency):
             if (dependency == dependency.lower()):
                 onPremApps.append(comp)
     return onPremApps
+
+
+def getComponentByTag(tag):
+    components = getComponents()
+    regexResults = []
+    returnList = []
+    for c in components:
+        regexResult = re.search(
+            "^Tags:.*?$", str(c["description"]), re.MULTILINE)
+        if (str(regexResult) != "None"):
+            regexResults.append(
+                {"id": c["id"], "name": c["name"], "dependency": regexResult.group(0).replace("Tags: ", "").split(",")})
+    for result in regexResults:
+        for tagResult in result["dependency"]:
+            if (tagResult.strip().lower() == tag.strip().lower()):
+                returnList.append(result)
+                break
+    return returnList
