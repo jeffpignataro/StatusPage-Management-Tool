@@ -1,5 +1,6 @@
 import os
 import json
+import warnings
 from helpers.filehelper import getFileFromRelativePath
 
 
@@ -9,6 +10,7 @@ def getEnvironmentFile():
 
 
 def getDevPageId():
+    warnings.warn("Using DEV Statuspage instance...")
     environment_json = json.load(getEnvironmentFile())
     return environment_json['devPageId']
 

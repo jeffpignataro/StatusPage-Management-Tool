@@ -5,6 +5,7 @@ from helpers.gethelper import getRequest
 from helpers.patchhelper import patchRequest
 from helpers.posthelper import postRequest
 from helpers.filehelper import getFileFromRelativePath
+from helpers.jsonhelper import sterilizeJsonStrings
 from enums.status import status as statusEnum
 
 
@@ -46,8 +47,8 @@ def updateComponent(componentId, description, name, status, showcase, groupId, p
     payload["component"]["showcase"] = "{showcase}".format(
         showcase=showcase).lower()
     if (pageId != ''):
-        return patchRequest("components", componentId, str(payload), pageId=pageId).json()
-    return patchRequest("components", componentId, str(payload)).json()
+        return patchRequest("components", componentId, payload, pageId=pageId).json()
+    return patchRequest("components", componentId, payload).json()
 
 
 def updateComponentStatus(componentId, status, pageId=''):
