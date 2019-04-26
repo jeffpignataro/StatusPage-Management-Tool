@@ -1,4 +1,4 @@
-from controllers.component import getComponents, getComponent, updateComponent
+from controllers.component import getComponents, getComponent, getComponentsByDependencies, updateComponent
 from data.environmentVariables import getDevPageId
 import re
 
@@ -22,8 +22,8 @@ def addTagToComponent(componentId, tag):
     descWithoutTags = desc.group(1)
     regexResult = re.search(
         "(^Tags:)(.*?$)", str(c["description"]), re.MULTILINE)
-    tagList = regexResult.group(2).split(",")
-    if (not tagList.__contains__(tag)):
+    tagList = [x.strip() for x in regexResult.group(2).split(",")]
+    if (tag not in tagList):
         tagList.append(tag)
     if (len(tagList) > 1 and len(tagList[0]) > 0):
         # if there's already tags
@@ -31,7 +31,7 @@ def addTagToComponent(componentId, tag):
     else:
         # if there's no existing tags
         strTagList = "".join(tagList)
-    return updateComponent(c["id"], "{descWithoutTags}\nTags:{tagList}".format(descWithoutTags=descWithoutTags, tagList=strTagList), c["name"], c["status"],
+    return updateComponent(c["id"], "{descWithoutTags}\nTags: {tagList}".format(descWithoutTags=descWithoutTags, tagList=strTagList), c["name"], c["status"],
                            c["showcase"], c["group_id"], getDevPageId())
 
 
@@ -39,4 +39,5 @@ def removeTagFromComponent(componentId, tag):
     return None
 
 
-print(addTagToComponent('5cyx5tl8zwrn', 'SSO'))
+print(getComponentsByDependencies("cloud"))
+#print(addTagToComponent('5cyx5tl8zwrn', 'Sitefinity'))

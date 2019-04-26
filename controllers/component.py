@@ -63,17 +63,17 @@ def getComponenetDependenciesFile():
     return open(getFileFromRelativePath(componenetDependenciesPathAndFile), 'r')
 
 
-def getComponenetDependencies():
+def getComponentDependencies():
     componenetDependencies_json = json.load(getComponenetDependenciesFile())
     return componenetDependencies_json
 
 
-def getComponentsByDependencies(dependency):
-    c = getComponenetDependencies()
+def getComponentsByDependencies(tag):
+    c = getComponentDependencies()
     onPremApps = []
     for comp in c:
         for dependency in comp["dependency"]:
-            if (dependency == dependency.lower()):
+            if (tag.lower() == dependency.lower()):
                 onPremApps.append(comp)
     return onPremApps
 
