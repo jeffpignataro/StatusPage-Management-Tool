@@ -1,6 +1,7 @@
 import re
 import json
 import os
+from warnings import warn
 from helpers.gethelper import getRequest
 from helpers.patchhelper import patchRequest
 from helpers.posthelper import postRequest
@@ -81,19 +82,23 @@ def getComponentsByDependencies(tag):
     return onPremApps
 
 
-def getComponentByTag(tag):
-    components = getComponents()
-    regexResults = []
+def getComponentsByTag(tag, pageId=''):
+    regexResults = getAllComponentsTags(pageId)
     returnList = []
-    for c in components:
-        regexResult = re.search(
-            "^Tags:.*?$", str(c["description"]), re.MULTILINE)
-        if (str(regexResult) != "None"):
-            regexResults.append(
-                {"id": c["id"], "name": c["name"], "dependency": regexResult.group(0).replace("Tags: ", "").split(",")})
     for result in regexResults:
-        for tagResult in result["dependency"]:
+        for tagResult in result["tags"]:
             if (tagResult.strip().lower() == tag.strip().lower()):
                 returnList.append(result)
-                break
     return returnList
+
+
+def getAllComponentsTags(pageId=''):
+    components = getComponents(pageId)
+    regexResults = []
+    for c in components:
+        regexResult = re.search(
+            "(^Tags:)(.*?)$", str(c["description"]), re.MULTILINE)
+        if (str(regexResult) != "None"):
+            regexResults.append(
+                {"id": c["id"], "name": c["name"], "tags": [i.strip() for i in regexResult.group(2).split(",")]})
+    return regexResults

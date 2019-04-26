@@ -31,5 +31,5 @@ def postRequest(apiTopic, topicId='', payload='', pageId=''):
     }
     payload = payload.replace("'", "\"")
     print(str(payload))
-    sleep(1)
+    sleep(.5)
     return requests.post("https://api.statuspage.io/v1/pages/{pageId}/{apiTopic}/{topicId}".format(pageId=pageId, apiTopic=apiTopic, topicId=topicId), data=payload, headers=headers)

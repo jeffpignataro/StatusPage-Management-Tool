@@ -23,5 +23,7 @@ def addTagsTextToSingleComponents(id):
                               c["status"], c["showcase"], c["group_id"]))
 
 
-print(removeTagFromComponent("mmhsvy7tvvty", "OnPrem"))
-print(addTagToComponent("mmhsvy7tvvty", "OnPrem"))
+#print(removeTagFromComponent("mmhsvy7tvvty", "OnPrem"))
+#print(addTagToComponent("xc7569m4pr6q", "OnPrem"))
+
+print(getComponent)

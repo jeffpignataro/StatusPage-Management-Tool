@@ -30,5 +30,5 @@ def patchRequest(apiTopic, topicId='', payload='', pageId=''):
         'Content-Type': 'application/json'
     }
     payload = json.dumps(payload)
-    sleep(1)
+    sleep(.5)
     return requests.patch("https://api.statuspage.io/v1/pages/{pageId}/{apiTopic}/{topicId}".format(pageId=pageId, apiTopic=apiTopic, topicId=topicId), data=payload, headers=headers)

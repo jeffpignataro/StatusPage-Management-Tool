@@ -1,582 +1,1030 @@
 [
   {
-    "name": "Point N Click Application",
-    "id": "vr0kwjhjs0c5"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "6s17sk4ym6fx",
+    "name": "DSP Services"
   },
   {
-    "name": "Judicial Affairs Website",
-    "id": "jsstxbkjbxm0"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "mq6xkyf3kmr7",
+    "name": "OSL Website"
   },
   {
-    "name": "BLUE",
-    "id": "syvst2s0wh18"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "843pn6rgkj5n",
+    "name": "UCSB Online Graduate Application"
   },
   {
-    "name": "Box Mobile",
-    "id": "3zvj2k6gd674"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "lfb6pcn880vt",
+    "name": "MCC Website"
   },
   {
-    "name": "Slack Messaging",
-    "id": "0tmr3sx7w0gw"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "p1nfv93wpq8l",
+    "name": "RCSGD Website"
   },
   {
-    "name": "Atlassian JIRA Cloud",
-    "id": "11bslkwt3s9s"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "gfsmjqjjhm2n",
+    "name": "Food Access at UCSB Website"
   },
   {
-    "name": "Google Apps Gmail",
-    "id": "sbxt1h4v90zt"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "qwhz1lmtz320",
+    "name": "CAPS Programs Reservation Application"
   },
   {
-    "name": "Zoom Group Messaging",
-    "id": "dwk8v11rlyvb"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "v7pvdcw30crv",
+    "name": "Veterans Support Website"
   },
   {
-    "name": "Economics Website",
-    "id": "g4jc5xgzjppy"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "2r4x20y3n20q",
+    "name": "Recreation Website"
   },
   {
-    "name": "Career Services Website",
-    "id": "s4bspdp1b55q"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "9lv24xpz9mdd",
+    "name": "EOP Advising Application"
   },
   {
-    "name": "Emergency Resources Website",
-    "id": "gg362sbh7lk7"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "cgwx686k7v81",
+    "name": "On-Premise Authentication Services"
   },
   {
-    "name": "SaySomething",
-    "id": "2khzfvwj38ls"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "vnlkkq2lmcly",
+    "name": "Academic Initiatives Website"
   },
   {
-    "name": "OISS Website",
-    "id": "740m4cl5wc6c"
+    "tags": [
+      ""
+    ],
+    "id": "syvst2s0wh18",
+    "name": "BLUE"
   },
   {
-    "name": "WGSE Website",
-    "id": "15xn135kwbrs"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "66c3w8yfbv7j",
+    "name": "Arts and Lectures Website"
   },
   {
-    "name": "Wellness Website",
-    "id": "k3mvtqkck373"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "bqswnnbnv4s8",
+    "name": "Childrens Center Website"
   },
   {
-    "name": "CLAS Website",
-    "id": "hd5lkcygzkff"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "906fk36mwwxl",
+    "name": "Registrar Student Service"
   },
   {
-    "name": "Orientation Website",
-    "id": "0r2y46kyc8pn"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "11bslkwt3s9s",
+    "name": "Atlassian JIRA Cloud"
   },
   {
-    "name": "EAOP Website",
-    "id": "n1pzrjgcjpyk"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "sbxt1h4v90zt",
+    "name": "Google Apps Gmail"
   },
   {
-    "name": "Admissions Staff Site",
-    "id": "lqylgqk432rw"
+    "tags": [
+      "SSO",
+      "OnPrem"
+    ],
+    "id": "mmhsvy7tvvty",
+    "name": "ADP Website"
   },
   {
-    "name": "DSP Services",
-    "id": "6s17sk4ym6fx"
+    "tags": [
+      "OnPrem",
+      "Blue",
+      "BlueOnline",
+      ".NET4"
+    ],
+    "id": "cd9wd0t3qwl9",
+    "name": "SREG"
   },
   {
-    "name": "OSL Website",
-    "id": "mq6xkyf3kmr7"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "3zvj2k6gd674",
+    "name": "Box Mobile"
   },
   {
-    "name": "SREG",
-    "id": "cd9wd0t3qwl9"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "0tmr3sx7w0gw",
+    "name": "Slack Messaging"
   },
   {
-    "name": "UCSB Online Graduate Application",
-    "id": "843pn6rgkj5n"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "dwk8v11rlyvb",
+    "name": "Zoom Group Messaging"
   },
   {
-    "name": "MCC Website",
-    "id": "lfb6pcn880vt"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "g4jc5xgzjppy",
+    "name": "Economics Website"
   },
   {
-    "name": "RCSGD Website",
-    "id": "p1nfv93wpq8l"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "s4bspdp1b55q",
+    "name": "Career Services Website"
   },
   {
-    "name": "Food Access at UCSB Website",
-    "id": "gfsmjqjjhm2n"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "jsstxbkjbxm0",
+    "name": "Judicial Affairs Website"
   },
   {
-    "name": "CAPS Programs Reservation Application",
-    "id": "qwhz1lmtz320"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "gg362sbh7lk7",
+    "name": "Emergency Resources Website"
   },
   {
-    "name": "Veterans Support Website",
-    "id": "v7pvdcw30crv"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "2khzfvwj38ls",
+    "name": "SaySomething"
   },
   {
-    "name": "Recreation Website",
-    "id": "2r4x20y3n20q"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "740m4cl5wc6c",
+    "name": "OISS Website"
   },
   {
-    "name": "EOP Advising Application",
-    "id": "9lv24xpz9mdd"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "15xn135kwbrs",
+    "name": "WGSE Website"
   },
   {
-    "name": "On-Premise Authentication Services",
-    "id": "cgwx686k7v81"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "k3mvtqkck373",
+    "name": "Wellness Website"
   },
   {
-    "name": "Academic Initiatives Website",
-    "id": "vnlkkq2lmcly"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "vr0kwjhjs0c5",
+    "name": "Point N Click Application"
   },
   {
-    "name": "Arts and Lectures Website",
-    "id": "66c3w8yfbv7j"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "hd5lkcygzkff",
+    "name": "CLAS Website"
   },
   {
-    "name": "Children's Center Website",
-    "id": "bqswnnbnv4s8"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "0r2y46kyc8pn",
+    "name": "Orientation Website"
   },
   {
-    "name": "Registrar Student Service",
-    "id": "906fk36mwwxl"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "n1pzrjgcjpyk",
+    "name": "EAOP Website"
   },
   {
-    "name": "ADP Website",
-    "id": "mmhsvy7tvvty"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "lqylgqk432rw",
+    "name": "Admissions Staff Site"
   },
   {
-    "name": "Point N Click Database",
-    "id": "7pgjz14x6wp4"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "1wb9gl997k0w",
+    "name": "OrgSync"
   },
   {
-    "name": "GOLD",
-    "id": "2c5yqrg5hqqk"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "xc7569m4pr6q",
+    "name": "DSP Website"
   },
   {
-    "name": "EOP Website",
-    "id": "042jkfwc2yhs"
+    "tags": [
+      "OnPrem",
+      "Blue",
+      "BlueOnline",
+      "Classic"
+    ],
+    "id": "n8y51dc331yy",
+    "name": "STAR"
   },
   {
-    "name": "Graduate Application Review",
-    "id": "frzsyh8c9cj8"
+    "tags": [
+      ""
+    ],
+    "id": "b1rg9lxnk3x5",
+    "name": "Getman/Villa Awards Website"
   },
   {
-    "name": "CASE",
-    "id": "0ntq8xkrsb14"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "frzsyh8c9cj8",
+    "name": "Graduate Application Review"
   },
   {
-    "name": "Arts and Lectures Ticketing Site",
-    "id": "nz8xrbsh0s8m"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "042jkfwc2yhs",
+    "name": "EOP Website"
   },
   {
-    "name": "Child Care Website",
-    "id": "tx668x1fcn5x"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "2c5yqrg5hqqk",
+    "name": "GOLD"
   },
   {
-    "name": "DeltaSys Web Services",
-    "id": "tsvpk9y61tl1"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "704w45l4m38h",
+    "name": "Cloud Authentication Services"
   },
   {
-    "name": "Inside Admissions",
-    "id": "10vx8mbcq7qb"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "3c7xtlrrw5z8",
+    "name": "Handshake"
   },
   {
-    "name": "STAR",
-    "id": "n8y51dc331yy"
+    "tags": [
+      ""
+    ],
+    "id": "84m0t0v69mxt",
+    "name": "Osniums WS"
   },
   {
-    "name": "CAPS Website",
-    "id": "5l71j2clp6sb"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "dqr13l5wxzhn",
+    "name": "Advocate"
   },
   {
-    "name": "DSP Website",
-    "id": "xc7569m4pr6q"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "l138885p8ht7",
+    "name": "Fusion"
   },
   {
-    "name": "Gaucho Parents Website",
-    "id": "7dv5bdbny4f1"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "qdhl3t40zx2k",
+    "name": "Zoom Meetings"
   },
   {
-    "name": "Getman/Villa Awards Website",
-    "id": "b1rg9lxnk3x5"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "ztwx1jzpgxrn",
+    "name": "Slack Posts/Files"
   },
   {
-    "name": "International Student and Scholar Management (ISSM)",
-    "id": "c0p1rqcszdhf"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "f72l42y9vzvm",
+    "name": "Box Website"
   },
   {
-    "name": "SA Email Server Queue",
-    "id": "89rqzz5zwt3d"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "t03vcpdkznf8",
+    "name": "Atlassian Confluence Cloud"
   },
   {
-    "name": "Student Health Website",
-    "id": "snysj66sgr0h"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "7pgjz14x6wp4",
+    "name": "Point N Click Database"
   },
   {
-    "name": "OrgSync",
-    "id": "1wb9gl997k0w"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "0ntq8xkrsb14",
+    "name": "CASE"
   },
   {
-    "name": "Cloud Authentication Services",
-    "id": "704w45l4m38h"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "nz8xrbsh0s8m",
+    "name": "Arts and Lectures Ticketing Site"
   },
   {
-    "name": "Handshake",
-    "id": "3c7xtlrrw5z8"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "tx668x1fcn5x",
+    "name": "Child Care Website"
   },
   {
-    "name": "Osniums WS",
-    "id": "84m0t0v69mxt"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "tsvpk9y61tl1",
+    "name": "DeltaSys Web Services"
   },
   {
-    "name": "Advocate",
-    "id": "dqr13l5wxzhn"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "10vx8mbcq7qb",
+    "name": "Inside Admissions"
   },
   {
-    "name": "Fusion",
-    "id": "l138885p8ht7"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "5l71j2clp6sb",
+    "name": "CAPS Website"
   },
   {
-    "name": "Google Apps Hangouts",
-    "id": "n7k8xwvy37l4"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "7dv5bdbny4f1",
+    "name": "Gaucho Parents Website"
   },
   {
-    "name": "Zoom Meetings",
-    "id": "qdhl3t40zx2k"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "c0p1rqcszdhf",
+    "name": "International Student and Scholar Management (ISSM)"
   },
   {
-    "name": "Slack Posts/Files",
-    "id": "ztwx1jzpgxrn"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "89rqzz5zwt3d",
+    "name": "SA Email Server Queue"
   },
   {
-    "name": "Box Website",
-    "id": "f72l42y9vzvm"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "snysj66sgr0h",
+    "name": "Student Health Website"
   },
   {
-    "name": "Atlassian Confluence Cloud",
-    "id": "t03vcpdkznf8"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "n7k8xwvy37l4",
+    "name": "Google Apps Hangouts"
   },
   {
-    "name": "International Scholar Dossier (ISD)",
-    "id": "ydq4bckjzv5w"
+    "tags": [
+      "Cloud",
+      "OnPrem"
+    ],
+    "id": "vvc173hl5yjg",
+    "name": "NoHo Software Care"
   },
   {
-    "name": "Box Sync",
-    "id": "k0n0ggtzph2x"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "mwpj36qyvtst",
+    "name": "eGrades"
   },
   {
-    "name": "Tessitura/RAMP",
-    "id": "nc8wr2kwt8g2"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "zcmhvtkg635m",
+    "name": "Dream Scholars Website"
   },
   {
-    "name": "NoHo Software's Care",
-    "id": "vvc173hl5yjg"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "v1hlnlqt17l2",
+    "name": "Point N Click Broker"
   },
   {
-    "name": "eGrades",
-    "id": "mwpj36qyvtst"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "6s5f69r67w08",
+    "name": "Applicant Authentication"
   },
   {
-    "name": "Giving Website",
-    "id": "bx7vd5rxc2df"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "nrf474q2ljr1",
+    "name": "GradNET"
   },
   {
-    "name": "Life of the Party Website",
-    "id": "202f2lbtnnxv"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "202f2lbtnnxv",
+    "name": "Life of the Party Website"
   },
   {
-    "name": "GradNET",
-    "id": "nrf474q2ljr1"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "bx7vd5rxc2df",
+    "name": "Giving Website"
   },
   {
-    "name": "Applicant Authentication",
-    "id": "6s5f69r67w08"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "ydq4bckjzv5w",
+    "name": "International Scholar Dossier (ISD)"
   },
   {
-    "name": "CRES",
-    "id": "srhh0slg3ky6"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "zk08hk6fy70f",
+    "name": "Zoom Telephone Services"
   },
   {
-    "name": "Point N Click Broker",
-    "id": "v1hlnlqt17l2"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "bjm7ntd56t5s",
+    "name": "Slack Login/SSO"
   },
   {
-    "name": "Dream Scholars Website",
-    "id": "zcmhvtkg635m"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "6dt16hfy1dqw",
+    "name": "Atlassian Developer Jira Cloud APIs"
   },
   {
-    "name": "Google Apps Calendar",
-    "id": "qx31ny6zpyxh"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "qx31ny6zpyxh",
+    "name": "Google Apps Calendar"
   },
   {
-    "name": "Atlassian Developer Jira Cloud APIs",
-    "id": "6dt16hfy1dqw"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "nc8wr2kwt8g2",
+    "name": "Tessitura/RAMP"
   },
   {
-    "name": "Slack Login/SSO",
-    "id": "bjm7ntd56t5s"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "k0n0ggtzph2x",
+    "name": "Box Sync"
   },
   {
-    "name": "Zoom Telephone Services",
-    "id": "zk08hk6fy70f"
+    "tags": [
+      "OnPrem",
+      "Blue",
+      "BlueOnline",
+      ".NET4"
+    ],
+    "id": "srhh0slg3ky6",
+    "name": "CRES"
   },
   {
-    "name": "Online SIR",
-    "id": "mv15m4yj02cb"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "zvm415nyngj1",
+    "name": "Atlassian Developer Confluence Cloud APIs"
   },
   {
-    "name": "Slack Apps/Integrations",
-    "id": "1q1sw2pr7qmb"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "62n4d7g0vq0b",
+    "name": "Point N Click iOS Web Services"
   },
   {
-    "name": "Atlassian Developer Confluence Cloud APIs",
-    "id": "zvm415nyngj1"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "04gtrn19155d",
+    "name": "Graduate Financial Competitions"
   },
   {
-    "name": "Google Apps Docs",
-    "id": "mg25s7mjg1f4"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "1q1sw2pr7qmb",
+    "name": "Slack Apps/Integrations"
   },
   {
-    "name": "AAA",
-    "id": "n6zhs7wv89x5"
+    "tags": [
+      "OnPrem",
+      "Blue",
+      "BlueBroker"
+    ],
+    "id": "knn0frdht5p7",
+    "name": "IADM.Broker"
   },
   {
-    "name": "Point N Click iOS Web Services",
-    "id": "62n4d7g0vq0b"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "n6zhs7wv89x5",
+    "name": "AAA"
   },
   {
-    "name": "IADM.Broker",
-    "id": "knn0frdht5p7"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "mv15m4yj02cb",
+    "name": "Online SIR"
   },
   {
-    "name": "Graduate Financial Competitions",
-    "id": "04gtrn19155d"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "t0bz6k981b3g",
+    "name": "Professional Development Website"
   },
   {
-    "name": "Professional Development Website",
-    "id": "t0bz6k981b3g"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "mg25s7mjg1f4",
+    "name": "Google Apps Docs"
   },
   {
-    "name": "AppStatus",
-    "id": "kxhfy0hlbgzl"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "bvp3kphp5dxx",
+    "name": "Admissions Website"
   },
   {
-    "name": "Red Folder Website",
-    "id": "5f3m36tbd6kv"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "x9d189bd5nyb",
+    "name": "ADMB.Broker"
   },
   {
-    "name": "Admissions Website",
-    "id": "bvp3kphp5dxx"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "xjpp6v26dcf3",
+    "name": "Point N Click Open Communicator"
   },
   {
-    "name": "Graduate Student Fee Remission",
-    "id": "7qzppp935n8b"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "7qzppp935n8b",
+    "name": "Graduate Student Fee Remission"
   },
   {
-    "name": "Google Apps Drive",
-    "id": "tpb9xkb6mpyc"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "tpb9xkb6mpyc",
+    "name": "Google Apps Drive"
   },
   {
-    "name": "Point N Click Open Communicator",
-    "id": "xjpp6v26dcf3"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "5f3m36tbd6kv",
+    "name": "Red Folder Website"
   },
   {
-    "name": "ADMB.Broker",
-    "id": "x9d189bd5nyb"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "kxhfy0hlbgzl",
+    "name": "AppStatus"
   },
   {
-    "name": "UADM.Online",
-    "id": "rzck2dct45vp"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "7ftdr4ns8gqk",
+    "name": "SABOG Website"
   },
   {
-    "name": "PNC",
-    "id": "btnnj8dgxygv"
+    "tags": [
+      "Cloud"
+    ],
+    "id": "884sdfqzmxkm",
+    "name": "Slack Workspace/Org Administration"
   },
   {
-    "name": "Slack Workspace/Org Administration",
-    "id": "884sdfqzmxkm"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "v6zc37bv9tn9",
+    "name": "GradDiv Website"
   },
   {
-    "name": "SABOG Website",
-    "id": "7ftdr4ns8gqk"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "rzck2dct45vp",
+    "name": "UADM.Online"
   },
   {
-    "name": "GradDiv Website",
-    "id": "v6zc37bv9tn9"
+    "tags": [
+      ""
+    ],
+    "id": "btnnj8dgxygv",
+    "name": "PNC"
   },
   {
-    "name": "GradPost Website",
-    "id": "gww34yth23vv"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "kdtsfbrlych8",
+    "name": "ProSAM"
   },
   {
-    "name": "ADMS.Online",
-    "id": "3805q1pfbymq"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "l0269gll7jm3",
+    "name": "SFAC Website"
   },
   {
-    "name": "ProSAM",
-    "id": "kdtsfbrlych8"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "3805q1pfbymq",
+    "name": "ADMS.Online"
   },
   {
-    "name": "SFAC Website",
-    "id": "l0269gll7jm3"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "gww34yth23vv",
+    "name": "GradPost Website"
   },
   {
-    "name": "Academic Initiatives",
-    "id": "mj64g96kwdn3"
+    "tags": [
+      ""
+    ],
+    "id": "mj64g96kwdn3",
+    "name": "Academic Initiatives"
   },
   {
-    "name": "CTAB.Online",
-    "id": "v5fqh16vjd64"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "v5fqh16vjd64",
+    "name": "CTAB.Online"
   },
   {
-    "name": "Graduate Student Association Website",
-    "id": "kvbyb75gxsvk"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "kvbyb75gxsvk",
+    "name": "Graduate Student Association Website"
   },
   {
-    "name": "INDX.Online",
-    "id": "cy2hw0jcjy22"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "cy2hw0jcjy22",
+    "name": "INDX.Online"
   },
   {
-    "name": "Admissions",
-    "id": "s6n02yvdd3jh"
+    "tags": [
+      ""
+    ],
+    "id": "s6n02yvdd3jh",
+    "name": "Admissions"
   },
   {
-    "name": "Alcohol and Drug Program",
-    "id": "b3hr98c979d3"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "5tkh2zgyqr7w",
+    "name": "STAB.Online"
   },
   {
-    "name": "STAB.Online",
-    "id": "5tkh2zgyqr7w"
+    "tags": [
+      ""
+    ],
+    "id": "b3hr98c979d3",
+    "name": "Alcohol and Drug Program"
   },
   {
-    "name": "Arts and Lectures",
-    "id": "5yg43g0kmq3t"
+    "tags": [
+      ""
+    ],
+    "id": "5yg43g0kmq3t",
+    "name": "Arts and Lectures"
   },
   {
-    "name": "Atlassian Suite",
-    "id": "xtk5zlk9js1x"
+    "tags": [
+      ""
+    ],
+    "id": "xtk5zlk9js1x",
+    "name": "Atlassian Suite"
   },
   {
-    "name": "Authentication Services",
-    "id": "1m9lkq3cn4pw"
+    "tags": [
+      ""
+    ],
+    "id": "1m9lkq3cn4pw",
+    "name": "Authentication Services"
   },
   {
-    "name": "Box",
-    "id": "fg9y0m9hf6bh"
+    "tags": [
+      ""
+    ],
+    "id": "fg9y0m9hf6bh",
+    "name": "Box"
   },
   {
-    "name": "Career Services",
-    "id": "jss8ylrksnlp"
+    "tags": [
+      ""
+    ],
+    "id": "jss8ylrksnlp",
+    "name": "Career Services"
   },
   {
-    "name": "Email Services",
-    "id": "749m9ydpkdsb"
+    "tags": [
+      ""
+    ],
+    "id": "749m9ydpkdsb",
+    "name": "Email Services"
   },
   {
-    "name": "Graduate Division",
-    "id": "73k2fsqrm475"
+    "tags": [
+      ""
+    ],
+    "id": "73k2fsqrm475",
+    "name": "Graduate Division"
   },
   {
-    "name": "Google Connect Suite",
-    "id": "s914clt9jqp3"
+    "tags": [
+      ""
+    ],
+    "id": "s914clt9jqp3",
+    "name": "Google Connect Suite"
   },
   {
-    "name": "Campus Learning Assistance Services",
-    "id": "13jvrj8nfkdg"
+    "tags": [
+      ""
+    ],
+    "id": "13jvrj8nfkdg",
+    "name": "Campus Learning Assistance Services"
   },
   {
-    "name": "Counseling and Psychological Services",
-    "id": "0bnnk91t7y6p"
+    "tags": [
+      ""
+    ],
+    "id": "0bnnk91t7y6p",
+    "name": "Counseling and Psychological Services"
   },
   {
-    "name": "DSP",
-    "id": "h9v5q4nmbjym"
+    "tags": [
+      ""
+    ],
+    "id": "h9v5q4nmbjym",
+    "name": "DSP"
   },
   {
-    "name": "Educational Outreach Program",
-    "id": "1xlh0b9v6xlf"
+    "tags": [
+      ""
+    ],
+    "id": "1xlh0b9v6xlf",
+    "name": "Educational Outreach Program"
   },
   {
-    "name": "Student Health Services",
-    "id": "rlfkpqp0l3n0"
+    "tags": [
+      ""
+    ],
+    "id": "rlfkpqp0l3n0",
+    "name": "Student Health Services"
   },
   {
-    "name": "Children's Center",
-    "id": "r1jrsmk2qwpn"
+    "tags": [
+      ""
+    ],
+    "id": "r1jrsmk2qwpn",
+    "name": "Childrens Center"
   },
   {
-    "name": "Early Academic Outreach Program",
-    "id": "lvpds01knrxz"
+    "tags": [
+      ""
+    ],
+    "id": "lvpds01knrxz",
+    "name": "Early Academic Outreach Program"
   },
   {
-    "name": "Economics Department",
-    "id": "0qmy3mjtqc12"
+    "tags": [
+      ""
+    ],
+    "id": "0qmy3mjtqc12",
+    "name": "Economics Department"
   },
   {
-    "name": "Food Security Task force",
-    "id": "fq02qkmw2bvz"
+    "tags": [
+      ""
+    ],
+    "id": "fq02qkmw2bvz",
+    "name": "Food Security Task force"
   },
   {
-    "name": "Health and Wellness",
-    "id": "0cr3zdjm6ssh"
+    "tags": [
+      ""
+    ],
+    "id": "0cr3zdjm6ssh",
+    "name": "Health and Wellness"
   },
   {
-    "name": "HIPAA website",
-    "id": "7cjw95knjbr4"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "7cjw95knjbr4",
+    "name": "HIPAA website"
   },
   {
-    "name": "Office of International Students and Scholars",
-    "id": "4cdh7ltggfqp"
+    "tags": [
+      ""
+    ],
+    "id": "4cdh7ltggfqp",
+    "name": "Office of International Students and Scholars"
   },
   {
-    "name": "Judicial Affairs",
-    "id": "f8vgfwzbdshx"
+    "tags": [
+      ""
+    ],
+    "id": "f8vgfwzbdshx",
+    "name": "Judicial Affairs"
   },
   {
-    "name": "Multicultural Center",
-    "id": "5b9vpz09bbrt"
+    "tags": [
+      ""
+    ],
+    "id": "5b9vpz09bbrt",
+    "name": "Multicultural Center"
   },
   {
-    "name": "Orientation",
-    "id": "8j595k06cd2d"
+    "tags": [
+      ""
+    ],
+    "id": "8j595k06cd2d",
+    "name": "Orientation"
   },
   {
-    "name": "Department of Recreation",
-    "id": "gjfg6cynfm7l"
+    "tags": [
+      ""
+    ],
+    "id": "gjfg6cynfm7l",
+    "name": "Department of Recreation"
   },
   {
-    "name": "Registrar",
-    "id": "30xnd14g8z9p"
+    "tags": [
+      ""
+    ],
+    "id": "30xnd14g8z9p",
+    "name": "Registrar"
   },
   {
-    "name": "Resource Center for Sexual and Gender Diversity",
-    "id": "dr58810kv2ls"
+    "tags": [
+      ""
+    ],
+    "id": "dr58810kv2ls",
+    "name": "Resource Center for Sexual and Gender Diversity"
   },
   {
-    "name": "Slack",
-    "id": "pv467w7s9qgn"
+    "tags": [
+      ""
+    ],
+    "id": "pv467w7s9qgn",
+    "name": "Slack"
   },
   {
-    "name": "Office of Student Life",
-    "id": "dxtz845prndv"
+    "tags": [
+      ""
+    ],
+    "id": "dxtz845prndv",
+    "name": "Office of Student Life"
   },
   {
-    "name": "Veterans Support",
-    "id": "kbcpsjsqcmmz"
+    "tags": [
+      ""
+    ],
+    "id": "kbcpsjsqcmmz",
+    "name": "Veterans Support"
   },
   {
-    "name": "Office of the Vice Chancellor of Student Affairs",
-    "id": "6znspj67mxpv"
+    "tags": [
+      ""
+    ],
+    "id": "6znspj67mxpv",
+    "name": "Office of the Vice Chancellor of Student Affairs"
   },
   {
-    "name": "Women, Gender, and Sexual Equity",
-    "id": "knd537f9xvjh"
+    "tags": [
+      ""
+    ],
+    "id": "knd537f9xvjh",
+    "name": "Women, Gender, and Sexual Equity"
   },
   {
-    "name": "Zoom",
-    "id": "3fghf0cw2qkz"
+    "tags": [
+      ""
+    ],
+    "id": "3fghf0cw2qkz",
+    "name": "Zoom"
   },
   {
-    "name": "ServicePro",
-    "id": "d8qs91nwjtgp"
+    "tags": [
+      "OnPrem"
+    ],
+    "id": "d8qs91nwjtgp",
+    "name": "ServicePro"
   }
 ]
