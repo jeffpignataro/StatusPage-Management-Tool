@@ -1,5 +1,6 @@
 from controllers.component import getComponents, getComponent, getComponentsByDependencies, updateComponent
 from data.environmentVariables import getDevPageId
+from helpers.taghelper import getDescriptionWithoutTags, getTagListFromDescription
 import re
 
 
@@ -27,11 +28,8 @@ def addTagsTextToSingleComponents(id):
 def addTagToComponent(componentId, tag):
     c = getComponent(componentId)
     try:
-        desc = re.search("(^.*?)(\nTags:)", str(c["description"]))
-        descWithoutTags = desc.group(1)
-        regexResult = re.search(
-            "(^Tags:)(.*?$)", str(c["description"]), re.MULTILINE)
-        tagList = [x.strip() for x in regexResult.group(2).split(",")]
+        descWithoutTags = getDescriptionWithoutTags(str(c["description"]))
+        tagList = getTagListFromDescription(str(c["description"]))
         if (tag not in tagList):
             tagList.append(tag)
         if (len(tagList) > 1 and len(tagList[0]) > 0):
@@ -50,6 +48,4 @@ def removeTagFromComponent(componentId, tag):
     return None
 
 
-components = getComponentsByDependencies("onprem")
-for c in components:
-    print(addTagToComponent(c["id"], 'OnPrem'))
+print(addTagToComponent('mmhsvy7tvvty', 'SSO'))
