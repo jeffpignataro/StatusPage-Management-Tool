@@ -18,18 +18,25 @@ def addTagsToAllComponents():
 def addTagToComponent(componentId, tag):
     # Still working on this function...
     c = getComponent(componentId, getDevPageId())
-    desc = re.search("^.*?\r\nTags:", str(c["description"]))
-    descWithoutTags = re.sub("\r\nTags:.?", '', desc.group(0))
-    regexResult = re.search("^Tags:.*?$", str(c["description"]), re.MULTILINE)
-    tagList = re.sub("^Tags:.?", '', regexResult.group(0)).split(",")
+    desc = re.search("(^.*?)(\nTags:)", str(c["description"]))
+    descWithoutTags = desc.group(1)
+    regexResult = re.search(
+        "(^Tags:)(.*?$)", str(c["description"]), re.MULTILINE)
+    tagList = regexResult.group(2).split(",")
     if (not tagList.__contains__(tag)):
         tagList.append(tag)
-    return updateComponent(c["id"], "{descWithoutTags}\r\n{tagList}".format(descWithoutTags=descWithoutTags, tagList=tagList), c["name"], c["status"],
-                           c["showcase"], c["group_id"])
+    if (len(tagList) > 1 and len(tagList[0]) > 0):
+        # if there's already tags
+        strTagList = ", ".join(tagList)
+    else:
+        # if there's no existing tags
+        strTagList = "".join(tagList)
+    return updateComponent(c["id"], "{descWithoutTags}\nTags:{tagList}".format(descWithoutTags=descWithoutTags, tagList=strTagList), c["name"], c["status"],
+                           c["showcase"], c["group_id"], getDevPageId())
 
 
 def removeTagFromComponent(componentId, tag):
     return None
 
 
-print(addTagToComponent('65w9m7yqs4dl', 'OnPrem'))
+print(addTagToComponent('5cyx5tl8zwrn', 'SSO'))
