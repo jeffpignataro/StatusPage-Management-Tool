@@ -9,14 +9,15 @@ from helpers.jsonhelper import sterilizeJsonStrings
 from enums.status import status as statusEnum
 
 
-def createComponent(description, name, status, showcase, groupId, pageId=''):
+def createComponent(description, name, status, showcase, groupId='None', pageId=''):
     payload = {}
     payload["component"] = {}
     payload["component"]["description"] = description
     payload["component"]["status"] = status
     payload["component"]["name"] = name
     payload["component"]["only_show_if_degraded"] = "false"
-    payload["component"]["group_id"] = groupId
+    if(str(groupId) != "None"):
+        payload["component"]["group_id"] = groupId
     payload["component"]["showcase"] = "{showcase}".format(
         showcase=showcase).lower()
     if (pageId != ''):
@@ -43,7 +44,8 @@ def updateComponent(componentId, description, name, status, showcase, groupId, p
     payload["component"]["status"] = status
     payload["component"]["name"] = name
     payload["component"]["only_show_if_degraded"] = "false"
-    payload["component"]["group_id"] = groupId
+    if(str(groupId) != "None"):
+        payload["component"]["group_id"] = groupId
     payload["component"]["showcase"] = "{showcase}".format(
         showcase=showcase).lower()
     if (pageId != ''):

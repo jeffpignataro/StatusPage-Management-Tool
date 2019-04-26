@@ -3,7 +3,7 @@ from data.environmentVariables import getDevPageId
 import re
 
 
-def addTagsToAllComponents():
+def addTagsTextToAllComponents():
     # This will likely never be run again, but it helped to add the tag stubs for all the components
     components = getComponents()
     for c in components:
@@ -12,6 +12,16 @@ def addTagsToAllComponents():
             desc += "\nTags: "
             print(updateComponent(c["id"], desc, c["name"],
                                   c["status"], c["showcase"], c["group_id"]))
+
+
+def addTagsTextToSingleComponents(id):
+    # This will likely never be run again, but it helped to add the tag stubs for all the components
+    c = getComponent(id)
+    desc = str(c["description"])
+    if ("Tags:" not in desc):
+        desc += "\nTags: "
+        print(updateComponent(c["id"], desc, c["name"],
+                              c["status"], c["showcase"], c["group_id"]))
 
 
 def addTagToComponent(componentId, tag):
