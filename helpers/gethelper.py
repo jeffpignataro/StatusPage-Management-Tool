@@ -15,4 +15,4 @@ def getRequest(apiTopic, topicId='', payload='', pageId=''):
         'cache-control': "no-cache"
     }
     sleep(.5)
-    return requests.get("https://api.statuspage.io/v1/pages/{}/{}/{}".format(pageId, apiTopic, topicId), data=payload, headers=headers)
+    return requests.get("https://api.statuspage.io/v1/pages/{}/{}/{}".format(pageId, apiTopic, topicId), data=payload, headers=headers).json()

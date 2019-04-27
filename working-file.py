@@ -1,3 +1,4 @@
-from controllers.component import getComponentsByTag
+from controllers.component import *
+from helpers.jsonhelper import prettyprint
 
-print(getComponentsByTag("Blue"))
+prettyprint(getComponentsWithoutGroups())

@@ -2,11 +2,12 @@ import re
 import json
 import os
 from warnings import warn
+from helpers.taghelper import getTagStringFromDescription
 from helpers.gethelper import getRequest
 from helpers.patchhelper import patchRequest
 from helpers.posthelper import postRequest
 from helpers.filehelper import getFileFromRelativePath
-from helpers.jsonhelper import sterilizeJsonStrings
+from helpers.jsonhelper import sterilizeJsonStrings, pretty, prettyprint
 from enums.status import status as statusEnum
 
 
@@ -21,21 +22,24 @@ def createComponent(description, name, status, showcase, groupId='None', pageId=
         payload["component"]["group_id"] = groupId
     payload["component"]["showcase"] = "{showcase}".format(
         showcase=showcase).lower()
-    if (pageId != ''):
-        return postRequest("components", '', str(payload), pageId=pageId).json()
-    return postRequest("components", '', str(payload)).json()
+    return postRequest("components", '', str(payload), pageId=pageId)
 
 
 def getComponents(pageId=''):
-    if (pageId != ''):
-        return getRequest("components", pageId=pageId).json()
-    return getRequest("components", pageId=pageId).json()
+    return getRequest("components", pageId=pageId)
+
+
+def getComponentsWithoutGroups(pageId=''):
+    components = getComponents(pageId)
+    for c in components:
+        if (str(c["group"]).lower() == 'true'):
+            # this doesn't remove from the list for some reason....
+            components.remove(c)
+    return components
 
 
 def getComponent(id, pageId=''):
-    if (pageId != ''):
-        return getRequest("components", id, pageId=pageId).json()
-    return getRequest("components", id).json()
+    return getRequest("components", id, pageId)
 
 
 def updateComponent(componentId, description, name, status, showcase, groupId, pageId=''):
@@ -49,9 +53,7 @@ def updateComponent(componentId, description, name, status, showcase, groupId, p
         payload["component"]["group_id"] = groupId
     payload["component"]["showcase"] = "{showcase}".format(
         showcase=showcase).lower()
-    if (pageId != ''):
-        return patchRequest("components", componentId, payload, pageId=pageId).json()
-    return patchRequest("components", componentId, payload).json()
+    return patchRequest("components", componentId, payload, pageId=pageId)
 
 
 def updateComponentStatus(componentId, status, pageId=''):
@@ -74,12 +76,12 @@ def getComponentDependencies():
 
 def getComponentsByDependencies(tag):
     c = getComponentDependencies()
-    onPremApps = []
+    apps = []
     for comp in c:
-        for dependency in comp["dependency"]:
+        for dependency in comp["tags"]:
             if (tag.lower() == dependency.lower()):
-                onPremApps.append(comp)
-    return onPremApps
+                apps.append(comp)
+    return apps
 
 
 def getComponentsByTag(tag, pageId=''):
@@ -93,12 +95,10 @@ def getComponentsByTag(tag, pageId=''):
 
 
 def getAllComponentsTags(pageId=''):
-    components = getComponents(pageId)
+    # Groups shouldn't ever be tagged because they don't have statuses
+    components = getComponentsWithoutGroups(pageId)
     regexResults = []
     for c in components:
-        regexResult = re.search(
-            "(^Tags:)(.*?)$", str(c["description"]), re.MULTILINE)
-        if (str(regexResult) != "None"):
-            regexResults.append(
-                {"id": c["id"], "name": c["name"], "tags": [i.strip() for i in regexResult.group(2).split(",")]})
+        regexResults.append(
+            {"id": c["id"], "name": c["name"], "tags": [i.strip() for i in getTagStringFromDescription(str(c["description"])).group(2).split(",")]})
     return regexResults
