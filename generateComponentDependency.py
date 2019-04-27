@@ -1,6 +1,5 @@
 import json
-import re
-from controllers.component import getComponents, getComponentsByTag, getAllComponentsTags
+from controllers.component import getAllComponentsTags
 
 # This file is just a stub for a potential automated creation of the json file
 # A better move might be to implement the tags in Statuspage since the logic is pretty easy

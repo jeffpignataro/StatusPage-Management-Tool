@@ -1,14 +1,9 @@
-import re
 import json
-import os
-from warnings import warn
 from helpers.taghelper import getTagStringFromDescription
 from helpers.gethelper import getRequest
 from helpers.patchhelper import patchRequest
 from helpers.posthelper import postRequest
 from helpers.filehelper import getFileFromRelativePath
-from helpers.jsonhelper import sterilizeJsonStrings, pretty, prettyprint
-from enums.status import status as statusEnum
 
 
 def createComponent(description, name, status, showcase, groupId='None', pageId=''):
@@ -38,8 +33,8 @@ def getComponentsWithoutGroups(pageId=''):
     return components
 
 
-def getComponent(id, pageId=''):
-    return getRequest("components", id, pageId)
+def getComponent(componentId, pageId=''):
+    return getRequest("components", componentId, pageId)
 
 
 def updateComponent(componentId, description, name, status, showcase, groupId, pageId=''):
