@@ -26,11 +26,7 @@ def getComponents(pageId=''):
 
 def getComponentsWithoutGroups(pageId=''):
     components = getComponents(pageId)
-    for c in components:
-        if (str(c["group"]).lower() == 'true'):
-            # this doesn't remove from the list for some reason....
-            components.remove(c)
-    return components
+    return [i for i in components if (str(i['group']).lower() == 'false')]
 
 
 def getComponent(componentId, pageId=''):
