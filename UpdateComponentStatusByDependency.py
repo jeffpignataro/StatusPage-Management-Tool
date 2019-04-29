@@ -4,8 +4,9 @@ from enums.status import status
 from enums.dependency import dependency
 
 
-components = getComponentsByDependencies(dependency.onprem.name)
-
-for c in components:
-    print(c)
-    #print(updateComponentStatus(c["id"], status.operational.name))
+def updateComponentStatusByDependency(tag, status):
+    components = getComponentsByDependencies(tag)
+    for c in components:
+        updateComponentStatus(c["id"], status)
+    print('{tag} apps updated with status {status}'.format(
+        tag=tag, status=status))
